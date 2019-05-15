@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#669999</color>
+    <color name="colorPrimaryDark">#669999</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="bgBottomNavigation">#669999</color>
+    <color name="color1">#6319EC</color>
+
+    <color name="charcoal">#36454F</color>
+    <color name="charcoal_light">#536A79</color>
+    <color name="charcoal_light1">#B3C2CB</color>
+    <color name="transparent">#00ff001c</color>
+    <color name="background">#dddddd</color>
+    <color name="white">#FFFFFF</color>
+</resources>

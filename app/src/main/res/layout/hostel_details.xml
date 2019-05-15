@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hostel_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:text="Not Available"
+        android:id="@+id/hostel_name"
+        android:textColor="#000000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/charcoal"
+        android:alpha="0.5"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/hostel_image"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostel_address"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="40dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Not Available"
+        android:textColor="#000000"/>
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/location2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostel_rent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="italic|bold"
+        android:text="Not Available"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feature1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:text="Not Available"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feature2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:text="Not Available"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/feature3"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="Not Available"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/owner_static"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner"
+        android:layout_marginLeft="27dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/charcoal"
+        android:alpha="0.5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/user3"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_image"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/owner_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Addres Not Found !"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:alpha="0.5"/>
+            <TextView
+                android:id="@+id/owner_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 00000 00000"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000000"
+                android:alpha="0.5"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

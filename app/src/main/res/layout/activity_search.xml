@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchHostels"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="#A3C2C2">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:padding="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/search"
+                    android:tint="@color/white"
+                    android:alpha="0.7"/>
+                <EditText
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Search Rooms.."
+                    android:inputType="text|textAutoComplete"/>
+                <ImageView
+                    android:id="@+id/voice_search"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0"
+                    android:padding="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:src="@drawable/mic"
+                    android:tint="@color/white"
+                    android:alpha="0.7"/>
+            </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/empty"
+                android:gravity="center"
+                android:paddingTop="48dp"
+                android:paddingBottom="48dp"
+                android:text="No Results"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical" />
+        </FrameLayout>
+</LinearLayout>
